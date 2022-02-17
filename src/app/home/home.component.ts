@@ -18,6 +18,11 @@ export class HomeComponent implements OnInit {
   ];
 
   constructor() {}
+  selectedLesson = null;
+
+  selectLesson(lesson) {
+    this.selectedLesson = lesson;
+  }
 
   ngOnInit() {}
 }
